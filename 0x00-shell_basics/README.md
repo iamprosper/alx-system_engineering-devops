@@ -24,5 +24,8 @@
 ## Task 7
 	The command that move a file to another is ```mv```
 
+## Task 8 
+	Te command that remove a file is ```rm```
+
 
 
