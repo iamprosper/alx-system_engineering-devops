@@ -21,4 +21,8 @@
 ## Task 6
 	The command that create a directory is ```mkdir```
 
+## Task 7
+	The command that move a file to another is ```mv```
+
+
 
