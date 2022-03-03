@@ -16,4 +16,9 @@
 	The command that displays the contents of the current directory including hidden files is `ls -la`
 
 ## Task 5
-	The command that displays the current directory contents in long format with hidden files and user and group IDs displayed numerically is `ls -na`
+	The command that displays the current directory contents in long format with hidden files and user and group IDs displayed numerically is ```ls -na```
+
+## Task 6
+	The command that create a directory is ```mkdir```
+
+
