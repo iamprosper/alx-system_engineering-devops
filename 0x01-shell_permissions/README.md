@@ -40,8 +40,21 @@
 ## Task 11 
 	The command that adds execute permission to only all subdirectories of the current directory is ``find /path/to/base/dir -type d -exec chmod 755 {} +``
 
-##Task 12
-	The command that creates a directory with permissions set initially is ``mkdir -mMODE dirname```
+## Task 12
+	The command that creates a directory with permissions set initially is ``mkdir -m MODE dirname```
 
+## Task 13
+	The command that changes the group owner to school for the file hello is ``chgrp school hello``
 
+## Task 14
+	The command that changes the owner to vincent and the group owner to staff for all files and directories in the working directory is `` chown -R vicent:staff . ``
+
+## Task 15
+	The command that changes the owner nd the group owner of the symbolic link _hello to vincent and staff is ` chown -h vincent:staff _hello `
+
+## Task 16
+	The command that changes the owner of the file hello to betty if only it's owned by the user guillaume is ``` chown --from=guillaume betty hello ```
+
+## Task 17
+	The command that play the StarWars IV episode in the terminal is ` telnet towel.blinkenlights.nl `
 
