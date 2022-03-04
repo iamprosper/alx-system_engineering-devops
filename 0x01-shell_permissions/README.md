@@ -10,4 +10,5 @@
 ## Task 2
 	The command that shows all the groups the current user is part of is ``groups``
 
-
+## Task 3
+	The command that changes the owner of the file hello to the user betty is ``sudo chown betty hello``
