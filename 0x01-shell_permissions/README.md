@@ -33,3 +33,9 @@
 	The command that adds all permissions to the owner, read and execute to the group, and write and execute to the others to the file hello is ``chmod 753 hello``
 
 
+## Task 10
+	The command that sets the same permissions as another file is ``chmod --reference=ref_file file``
+
+
+
+
