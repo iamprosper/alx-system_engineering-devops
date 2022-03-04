@@ -23,4 +23,7 @@
 	The command that adds execute permission to the owner and the group owner and read permission to other users to the file hello is ``chmod 754 hello``
 
 
+## Task 7
+	The command that add execute permisions to everyone is ``chmod 751``
+
 
