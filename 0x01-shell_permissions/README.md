@@ -15,3 +15,6 @@
 
 ## Task 4
 	The command that creates an empty file is ```touch```
+
+## Task 5
+	The command that adds execute permission to the owner of the file hello is ``chmod u+x hello
