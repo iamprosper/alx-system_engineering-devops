@@ -6,3 +6,8 @@
 ## Task 1
 	The command that shows the username  of the current user is `whoami`
 
+
+## Task 2
+	The command that shows all the groups the current user is part of is ``groups``
+
+
