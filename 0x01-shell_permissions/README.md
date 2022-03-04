@@ -29,4 +29,7 @@
 ## Task 8
 	The command that adds permission for just all others users is ``chmod 007``
 
+## Task 9
+	The command that adds all permissions to the owner, read and execute to the group, and write and execute to the others to the file hello is ``chmod 753 hello``
+
 
