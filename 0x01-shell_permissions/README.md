@@ -18,3 +18,9 @@
 
 ## Task 5
 	The command that adds execute permission to the owner of the file hello is ``chmod u+x hello
+
+##Task 6
+	The command that adds execute permission to the owner and the group owner and read permission to other users to the file hello is ``chmod 114 hello``
+
+
+
