@@ -48,3 +48,8 @@
 
 ## Task 15
 	Thecommand that move all files beginning with an uppercase letter to the directory /tmp/u is `` mv [[:upper:]]* /tmp/u ``
+
+## Task 16
+	The command that deletes all files in the current working directory that end with the character ~ is `` rm ./*~ ``
+
+
