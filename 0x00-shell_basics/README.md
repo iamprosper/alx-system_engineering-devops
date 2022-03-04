@@ -41,3 +41,10 @@
 
 ## Task 13
 	The command that create a symbolic link to a directory for example /bin/ls, named __ls__ is ```ln -s /bin/ls __ls__```
+
+
+## Task 14
+	The command that copies all the HTML files from the current working directory to the parent directory, based on newers one or if only it does not exists in the parent directory is `` cp -u *.html ..``
+
+## Task 15
+	Thecommand that move all files beginning with an uppercase letter to the directory /tmp/u is `` mv [[:upper:]]* /tmp/u ``
