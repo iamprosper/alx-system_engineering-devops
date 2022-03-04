@@ -52,4 +52,7 @@
 ## Task 16
 	The command that deletes all files in the current working directory that end with the character ~ is `` rm ./*~ ``
 
+## Task 17
+	The command that creates many directories is mkdir  dir1/dir2/dir3/..
+
 
