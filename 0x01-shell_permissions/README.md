@@ -12,3 +12,6 @@
 
 ## Task 3
 	The command that changes the owner of the file hello to the user betty is ``sudo chown betty hello``
+
+## Task 4
+	The command that creates an empty file is ```touch```
