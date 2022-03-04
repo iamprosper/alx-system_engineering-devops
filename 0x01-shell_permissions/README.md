@@ -24,6 +24,6 @@
 
 
 ## Task 7
-	The command that add execute permisions to everyone is ``chmod 751``
+	The command that add execute permisions to everyone is ``chmod 555``
 
 
