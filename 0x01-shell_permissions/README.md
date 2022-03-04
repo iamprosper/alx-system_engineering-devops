@@ -37,7 +37,11 @@
 	The command that sets the same permissions as another file is ``chmod --reference=ref_file file``
 
 
-## Task 10 
+## Task 11 
 	The command that adds execute permission to only all subdirectories of the current directory is ``find /path/to/base/dir -type d -exec chmod 755 {} +``
+
+##Task 12
+	The command that creates a directory with permissions set initially is ``mkdir -m MODE dirname```
+
 
 
