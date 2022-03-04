@@ -26,4 +26,7 @@
 ## Task 7
 	The command that add execute permisions to everyone is ``chmod +x``
 
+## Task 8
+	The command that adds permission for just all others users is ``chmod 007``
+
 
