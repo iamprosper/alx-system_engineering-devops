@@ -56,7 +56,21 @@
 	The command that creates many directories is mkdir  dir1/dir2/dir3/..
 
 
-## Tassk 18
+## Task 18
 	The command that list files and directories of current directory commas separated and directories ending with / is `ls -map`
+
+
+## Task 19
+
+
+To create a magic file that can be used to detect School data files, knowing that School data files always contain the string SCHOOL at offset O: 
+
+-The first argument is 0 (the offset)
+-The second argument on the same line is the type of the data to be tested, in our case, it is string
+-The third argument on the same line is the output message, in case we found the match
+-The fourth argument on the second line is the mime type of those file which is set by 
+```
+!:mime School
+```
 
 
