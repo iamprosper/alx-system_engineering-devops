@@ -56,3 +56,7 @@
 	The command that creates many directories is mkdir  dir1/dir2/dir3/..
 
 
+## Tassk 18
+	The command that list files and directories of current directory commas separated and directories ending with / is `ls -map`
+
+
