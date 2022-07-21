@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # A script printing string ten times with for loop
 for i in {1..10}; do
-	echo "Best School"
+	echo $i | sed "s/$i/Best School/"
 done
