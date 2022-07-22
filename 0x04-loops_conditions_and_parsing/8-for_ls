@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A script printing directory content
+for file in * ; do
+	echo "$file" | cut -d- -f2
+done
