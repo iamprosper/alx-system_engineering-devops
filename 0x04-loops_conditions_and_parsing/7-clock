@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#A bash script printing time in hr and min
+
+h="0"
+m="1"
+while [ $h -lt 13 ]; do
+	echo "Hour: $h"
+	while [ $m -lt 60 ]; do
+		echo "$m"
+		m=$((m+1))
+	done
+	m="1"
+	h=$((h+1))
+done
