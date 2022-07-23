@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A bash script that stop another bash file
+#shellcheck disable=SC2009
+pid=$(ps -aux | grep "bash ./4-to_infinity_and_beyond" | head -1 | cut -d ' ' -f3)
+kill -s TERM "$pid"
