@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A bash script printing indefinitively a string
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
