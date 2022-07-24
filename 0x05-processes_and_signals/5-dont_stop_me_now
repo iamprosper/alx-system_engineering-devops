@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 # A bash script that stop another bash file
 #shellcheck disable=SC2009
-pid=$(ps -aux | grep to_infinity | head -1 | cut -d ' ' -f4)
-kill -TERM "$pid"
+#pid=$(ps -aux | grep "4-to_infinity_and_beyond" | head -1 | cut -d ' ' -f4)
+#echo $pid
+#kill -TERM $pid
+#pid=$(pgrep bash | tail -2 | head -1)
+#ps_list=$(pgrep bash)
+#pid=$(echo $ps_list | cut -d ' ' -f3)
+kill -TERM "$(ps -aux | awk '/infinity/{print $2}' | head -1)"
+#echo $pid
