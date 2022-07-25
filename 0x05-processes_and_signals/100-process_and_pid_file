@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# A bash script printing indefinitively a string
+echo $$ >> /var/run/myscript.pid
+trap "echo I hate the kill command; exit; rm /var/run/myscript.pid" SIGTERM
+trap "echo T U no love me?!" SIGINT
+trap "rm /var/run/myscript.pid; exit" SIGQUIT
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
