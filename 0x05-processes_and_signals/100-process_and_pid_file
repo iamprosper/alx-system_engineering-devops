@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # A bash script printing indefinitively a string
-echo $$ >> /var/run/myscript.pid
-trap "echo I hate the kill command; exit; rm /var/run/myscript.pid" SIGTERM
+echo $$
+#>> /var/run/myscript.pid
+trap "echo I hate the kill command; rm /var/run/myscript.pid; exit" SIGTERM
 trap "echo T U no love me?!" SIGINT
 trap "rm /var/run/myscript.pid; exit" SIGQUIT
 while true; do
