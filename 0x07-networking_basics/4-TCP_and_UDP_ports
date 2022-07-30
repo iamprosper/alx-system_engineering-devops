@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A script giving answer about UDP and TCP
+cat /proc/net/tcp
