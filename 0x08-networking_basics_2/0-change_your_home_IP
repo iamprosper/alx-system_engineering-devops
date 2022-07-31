@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
 #Part 2 of networking basics
-sudo sed -i 's/127.0.0.1/127.0.0.2/g' /etc/hosts
-sudo sed -i 's/157.240.11.35/8.8.8.8/g' /etc/hosts
+#sudo sed -i 's/127.0.0.1/127.0.0.2/g' /etc/hosts
+#sudo sed -i 's/157.240.11.35/8.8.8.8/g' /etc/hosts
+sudo awk '{
+if ($2 == "localhost")
+	#print("found")
+	{$1 = "127.0.0.2"}
+}1' /etc/hosts > /etc/hosts
+sudo awk '{
+if ($2 == "facebook")
+	#print("found")
+	{$1 = "8.8.8.8"}
+}1' /etc/hosts > /etc/hosts
