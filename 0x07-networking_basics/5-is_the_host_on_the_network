@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Ping ip
+if [ $# -ne 1 ]; then
+	echo "Usage 5-is_the_host_on_the_network {IP_ADDRESS}"
+	exit 0
+fi
+ping $1
