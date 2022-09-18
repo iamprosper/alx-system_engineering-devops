@@ -1,0 +1,5 @@
+Host my_server
+	HostName 3.225.221.222
+	User ubuntu
+	Port 22
+	IdentityFile ~/.ssh/school
