@@ -1,4 +1,4 @@
 # The file executes a command
-exec {
+exec {'kill a proc':
   command => 'pkill killmenow'
 }
