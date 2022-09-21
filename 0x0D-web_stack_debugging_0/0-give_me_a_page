@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This file start apache and provides a page
+sudo systemctl start apache2
