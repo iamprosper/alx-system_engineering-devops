@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # This file start apache and provides a page
-sudo systemctl start apache2
+docker run -p 8080:0 -d -it holbertonschool/265-0
+47ca3994a4910bbc29d1d8925b1c70e1bdd799f5442040365a7cb9a0db218021
