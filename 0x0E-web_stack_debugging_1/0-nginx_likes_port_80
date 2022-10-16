@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Changing nginx port
-sudo apt -y update
-sudo apt -y install nginx
+apt -y update
+apt -y install nginx
 ufw allow 'Nginx HTTP'
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-sudo service nginx start
+service nginx start
