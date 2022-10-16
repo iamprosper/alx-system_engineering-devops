@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Changing nginx port
+pkill apache2
 apt -y update
 apt -y install nginx
 ufw allow 'Nginx HTTP'
