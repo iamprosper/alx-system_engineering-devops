@@ -7,8 +7,8 @@ Args (cli):
 
 Functions: number_of_subscribers(subreddit)
 """
-import requests
 import json
+import requests
 
 
 def number_of_subscribers(subreddit):
