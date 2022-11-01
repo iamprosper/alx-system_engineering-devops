@@ -21,8 +21,7 @@ def number_of_subscribers(subreddit):
     response = requests.get("https://reddit.com/r/{}/about.json"
                             .format(subreddit),
                             headers={'User-agent': 'Chrome'})
+    if ('error' in response.json()):
+        return 0
     sub = response.json()["data"]["subscribers"]
     return (sub)
-
-
-number_of_subscribers("programming")
