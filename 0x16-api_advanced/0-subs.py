@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-import requests
-import json
-
-
 """
 This module is used for scrapping reddit app
 
@@ -11,6 +7,8 @@ Args (cli):
 
 Functions: number_of_subscribers(subreddit)
 """
+import requests
+import json
 
 
 def number_of_subscribers(subreddit):
