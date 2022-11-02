@@ -20,7 +20,7 @@ def top_ten(subreddit):
                             headers=header,
                             params=query)
     if (not response.json()["data"]["after"]):
-        print("None")
+        print(None)
         return
     posts = response.json()["data"]["children"]
     for post in posts:
