@@ -3,7 +3,6 @@
 This module contain a function that fetch the top ten subreddit
 Function: top_ten(subreddit)
 """
-import json
 import requests
 
 
@@ -20,7 +19,7 @@ def top_ten(subreddit):
                             headers=header,
                             params=query)
     if (not response.json()["data"]["after"]):
-        print("None")
+        print(None)
     posts = response.json()["data"]["children"]
     for post in posts:
         print(post["data"]["title"])
