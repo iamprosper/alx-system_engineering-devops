@@ -20,7 +20,7 @@ def top_ten(subreddit):
                             headers=header,
                             params=query,
                             allow_redirects=False)
-    if response.status_code == 302:
+    if response.status_code >= 300:
         print(None)
         return
     posts = response.json()["data"]["children"]
