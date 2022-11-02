@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 This module contain a function that fetch the top ten subreddit
 Function: top_ten(subreddit)
@@ -17,9 +17,11 @@ def top_ten(subreddit):
     response = requests.get("https://reddit.com/r/{}/new.json"
                             .format(subreddit),
                             headers=header,
-                            params=query)
+                            params=query,
+                            allow_redirects=False)
     if (not response.json()["data"]["after"]):
         print(None)
+        return
     posts = response.json()["data"]["children"]
     for post in posts:
         print(post["data"]["title"])
