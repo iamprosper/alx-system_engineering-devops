@@ -2,6 +2,7 @@
 # This script install nginx on a server and configure the home page
 sudo apt install nginx
 sudo ufw allow 'Nginx HTTP'
-echo "Hello World!" | sudo tee/usr/share/nginx/html/index.html
+# sudo service nginx start
+echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
 # sudo cp index.nginx-debian.html /var/www/html
 sudo service nginx restart
