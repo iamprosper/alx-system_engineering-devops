@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+sudo apt update
+sudo apt install -y nginx
+sudo service nginx start
+sudo -i '50i\t\trewrite ^/redirect_me https://iamprosper.github.io permanent;' /etc/nginx/sites-available/default
+sudo service nginx reload
