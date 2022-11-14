@@ -2,6 +2,7 @@
 # This script configure a new ubuntu server and redirect a page
 sudo apt update
 sudo apt install -y nginx
+sudo ufw allow 'Nginx HTTP'
 sudo service nginx start
 sudo sed -i '50i\\t\trewrite ^/redirect_me https://iamprosper.github.io permanent;' /etc/nginx/sites-available/default
 sudo service nginx reload
