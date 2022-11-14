@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# This script configure a new ubuntu server and redirect a page
 sudo apt update
 sudo apt install -y nginx
 sudo service nginx start
