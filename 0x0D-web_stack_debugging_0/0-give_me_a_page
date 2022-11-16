@@ -3,5 +3,6 @@
 sudo apt update 
 sudo apt install apache2
 echo "Hello Holberton" | sudo tee /var/www/html/index.html
+sudo service apahce2 start
 sudo sed -i 's/Listen 80/Listen 8080/' /etc/apache2/ports.conf
-sudo service apache2 start
+sudo service apache2 restart
