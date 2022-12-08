@@ -1,9 +1,23 @@
 #!/usr/bin/env bash
 # This script configure my 2 server to add custom header for load balancing
 # server_id=$(cat /etc/hosts | grep "web" | cut -d " " -f3)
+
+# Web server installation process
 sudo apt update
 sudo apt install -y nginx
 sudo ufw allow 'Nginx HTTP'
 sudo service nginx start
+
+# Custom default page
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+
+# Redirection
+sudo sed -i '51i\\t\trewrite ^/redirect_me https://iamprosper.github.io permanent;' /etc/nginx/sites-available/default
+
+# Custom error page
+sudo sed -i '54i\\n\terror_page 404 /error_404.html;' /etc/nginx/sites-available/default
+sudo sed -i '56i\\tlocation = /error_404.html {\n\t\troot /home/ubuntu/public_html;\n\t\tinternal;\n\t}\n' /etc/nginx/sites-available/default
+
+# Hostname in header
 sudo sed -i "52i\\\t\tadd_header X-Served-By $(hostname);" /etc/nginx/sites-available/default
 sudo service nginx reload
